@@ -45,10 +45,8 @@ fun main(args: Array<String>) {
     var d = 100
     d += 1
 
-
     //Creating classes and instances: To define a class, use the class keyword.
     class Person
-
 
     //CONDITIONAL EXPRESSIONS
     //if :
@@ -91,15 +89,22 @@ fun main(args: Array<String>) {
         }
     println(describe("yt"))
 
-    //range: Check if a number is within a range using in operator.
+    //RANGE: using in operator
+    //Check if a number is within a range
+    val year = 2021
+    if (year in 1995..2090) println("life")
+
+    //Iterate over a range.
     for (x in 1..5) {
         print(x)
     }
-    println() // vide
-
-
-
-
+    println()
+    //Or over a progression.
+    for (x in 6..12 step 3) print(x)
+    println()
+    for (x in 20 downTo 5 step 5) print(x)
+    println()
+    for (x in 10 until 19 step 3) print(x)
 
 
 }
