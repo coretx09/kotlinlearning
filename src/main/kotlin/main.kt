@@ -95,31 +95,11 @@ fun main(args: Array<String>) {
     for (x in 1..5) {
         print(x)
     }
-    println("") // vide
+    println() // vide
 
 
 
 
-
-
-
-    print("")
-    val number  = 76
-    var name = "Sauvet"
-    println("$number $name")
-    println(name.length)
-    
-    if (number >= 50){
-        println("number = $number , votre nom: $name")
-    } else {
-        println("why?")}
-
-    when (number){
-
-    }
-    for (x in 1..10){
-        print(x)
-    }
 
 
 }
