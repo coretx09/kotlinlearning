@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     print("SAUVET ")
     /* println prints its arguments and adds a line break,
      so that the next thing you print appears on the next line.*/
-    println("Hello World!")
+    println("Hello \n World!")
 
     //FUNCTION:
     /*A function with two Int parameters and Int return type.*/

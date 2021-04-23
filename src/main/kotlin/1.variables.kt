@@ -30,4 +30,23 @@ fun main(args: Array<String>){
     println(Short.MAX_VALUE)
     println(Byte.MAX_VALUE)
 
+    val text: String ="""
+        MY NAME IS SAUVET NGAMPIO
+        FROM CONGO BZ
+        LIVE IN SPB
+    """.trimMargin()
+    println(text)
+
+
+    // NULLABLES VARIABLES:
+    // By default, variables cannot be null.
+    var numbers: Int?    //Declare an Int and assign null to it.
+    numbers = 0
+    println(numbers)
+    numbers = null
+    println(numbers)
+
+
+
+
 }
