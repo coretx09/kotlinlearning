@@ -1,3 +1,5 @@
+
+
 fun main(args: Array<String>) {
 
 
@@ -32,7 +34,7 @@ fun main(args: Array<String>) {
     var listVar = mutableListOf("gf", "tr", 54)
     listVar = mutableListOf(0)
     println(listVar)
-    listVar.add(0, 2, )
+    listVar.add(0, 2 )
     println(listVar)
     println(listVar.size)
 
@@ -53,30 +55,52 @@ fun main(args: Array<String>) {
     """.trimIndent())
 
 
-    // ARRAYS (arrayOf) : 
-    // there is no mutable version of an Array.
-    
-    val nameSchool = arrayOf("hse", "polytex", "hvu")
-    println(nameSchool.contentToString())
+    // ARRAYS (arrayOf) : there is no mutable version of an Array.
 
+    //Un tableau déclaré avec arrayOf n'a pas de type associé aux éléments
+    //Déclarez un tableau de chaînes à l'aide de arrayOf.
+    val nameSchool = arrayOf("hse", "polytex", "hvu")
+
+    // Utilisez  java.util.Arrays.toString() utilitaire de matrice pour l'imprimer.
+    println(java.util.Arrays.toString(nameSchool))
+
+    //ou (contentTostring) Renvoie une représentation sous forme de chaîne du contenu du tableau
+    // spécifié comme s'il s'agissait de List
+    println(nameSchool.contentToString())
+    
+    // ARRAYS WITH TYPE :
+    /*Vous pouvez également déclarer des tableaux avec un type pour tous les éléments.*/
+    val tabType = intArrayOf(3, 6, 6, 5)
+    println(tabType.contentToString())
+
+
+    // Another option is to use the Array constructor
+    // that takes the array size and the function that returns values of array elements given its index
+    // Creates an Array<String>
     val asc = Array (5) {i -> (i * 2).toString()}
     println(asc.contentToString())
-    asc.forEach { print(it) }
+    asc.forEach { print(it)}
+    println()
     
     //Primitive type arrays
-    val numbersArray: IntArray = intArrayOf(7,2, 3)
-    println(numbersArray.contentToString())
-
     // Array of int of size 3 with values [0, 0, 0]
     val arr1 = IntArray(3)
     println(arr1.contentToString())
 
     // e.g. initialise the values in the array
-    val arr2 = LongArray(5) { (it * 5).toLong() }
+    val arr2 = LongArray(5) {(it * 5).toLong() } //it fait référence à l'index du tableau
     println(arr2.contentToString())
 
 
-    
+    // BOUCLE:
+    val myTable = arrayOf("qg", "pdg", "dg")
+    for (i in myTable) print("$i ")
+    println()
+
+    // Parcourir les éléments et les index en même temps:
+    for((index, element) in myTable.withIndex()) {
+        println("Item at $index is $element")
+    }
 
 
 }
