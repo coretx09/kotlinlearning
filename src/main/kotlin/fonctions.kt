@@ -81,15 +81,30 @@ fun main(args: Array<String>){
     .*/
 
     val decorations = listOf ("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
-    val eager = decorations.filter { it [0] == 'p' }
+    val eager = decorations.filter { it [0] == 'p' } // filter({lambda}) --> fonction H.O
     println("eager: $eager")
 
 
-    //FUNCTION LAMBDA : Un lambda est une expression qui crée une fonction.
+    //FUNCTION LAMBDA : Un lambda est une expression qui crée une fonction sans nom.
+    // Les expressions Lambda sont définies entre des accolades {}.
     /*les lambdas sont appelés fonctions anonymes , littéraux de fonction*/
-    var dirtyLel = 20
+    
     val waterFilter = {dirty : Int, resolv: Int -> dirty / resolv}
+    val waterNoFilter: (Int) -> Int = {dirty -> dirty / 2}
+    //Une fois que le lambda est affecté à une variable, vous pouvez l'appeler comme une fonction
     println(waterFilter(1, 2))
+    println(waterNoFilter(32))
+
+    // f H-order:
+    fun updateDirty(num: Int, pers: Int, operation: (Int, Int) -> Int): Int{
+        return operation(num, pers)
+    }
+    // avec lambda
+    println(updateDirty(15, 3,waterFilter))
+    // avec fonction regular
+    fun start(starter: Int, player: Int) = starter + player
+    println(updateDirty(30, 10, ::start))
+
 
 
 
