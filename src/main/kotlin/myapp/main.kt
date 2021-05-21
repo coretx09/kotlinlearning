@@ -16,11 +16,23 @@ fun buildAquarium() {
     // tower 1
     val myTower = TowerTank(40, 25)
     myTower.printSize()
+}
 
+fun makeFish () {
+    val shark = Shark()
+    val pleco = Plecostomus()
+    println("Shark: ${shark.color}")
+    shark.eat()
+    shark.bar()
+    println("Plecostomus: ${pleco.color}")
+    pleco.eat()
+    pleco.bar()
 }
 
 fun main(args: Array<String>) {
-    buildAquarium()
+   // buildAquarium()
+
+    makeFish()
 
 
 

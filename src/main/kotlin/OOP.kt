@@ -18,6 +18,25 @@ fun main(args: Array<String>){
       protected: est identique à private, mais il sera également visible par toutes les sous-classes.
 
 
+     GETTERS/SETTERS
+      les getters et les setters sont facultatifs et sont générés automatiquement
+      si vous ne les créez pas dans votre programme
+      generes ----> {var name: String = "defaultValue"}
+      definis par defaut -----> {var name: String = "defaultValue"
+           // getter
+           get() = field  ---->valeur renvoye
+          // setter
+         set(value) {
+             field = value ---> definition de la valeur obtenue
+       }
+
+
+     CLASS INHERITANCE :
+     FINAL(par defaut) / OPEN(class, methode et proprietes) for inheritance --> OVERRIDE(sous-class{meth. et prop.})
+
+     open class SuperClass(open val prop) {} --->
+       ---> class ClassInherit(override val prop): SuperClass(prop = prop) {}
+
 
 
 
