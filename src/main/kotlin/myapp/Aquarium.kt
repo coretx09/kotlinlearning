@@ -55,6 +55,7 @@ open class Aquarium(open var width: Int = 20, open var height: Int = 40, open va
         """.trimIndent()
         )
     }
+
 }
 // Sous-classes
 // Class is open for inheritance
