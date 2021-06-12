@@ -8,3 +8,16 @@ CLASS HIERARCHY :
    Si les valeurs des propriétés et les implémentations des fonctions ne sont pas connues, rendez la classe abstract.
    Lorsque vous déclarez des fonctions et des variables abstraites, c'est comme une promesse que vous leur donnerez des
    valeurs et des implémentations plus tard.
+
+   ** Créez une abstract classe où certaines fonctionnalités doivent être implémentées par ses sous-classes.
+        Une abstract classe ne peut donc pas être instanciée.
+
+   ** Utilisez un override mot-clé pour remplacer les propriétés et les fonctions des sous-classes.
+
+   ** Utilisez super mot - clé pour référencer des fonctions et des propriétés dans la classe parent.
+
+   ** Créez une classe open pour qu'elle puisse être sous-classée.
+
+   ** Créez une propriété private pour qu'elle ne puisse être utilisée qu'à l'intérieur de la classe.
+
+   ** Utilisez la with construction pour effectuer plusieurs appels sur la même instance d'objet.
