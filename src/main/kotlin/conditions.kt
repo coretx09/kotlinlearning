@@ -2,13 +2,13 @@ import java.util.Scanner
 
 fun main(args: Array<String>) {
 
-    
+
     // instance reader
-    val reader = Scanner(System.`in` ) 
+    val reader = Scanner(System.`in`)
     // called
     print("Your best number")
     val bestNumber = reader.nextInt()
-    
+
     // CONDITIONS:
     if (bestNumber in 1..5) println("janv - jun")
     else if (bestNumber in 6..9) println("jul - sept")
@@ -28,5 +28,5 @@ fun main(args: Array<String>) {
         else -> println("only in range 1 to 7")
 
     }
-    
+
 }

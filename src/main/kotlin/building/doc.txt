@@ -1,0 +1,10 @@
+CLASS HIERARCHY :
+
+ ABSTRACT CLASS:  (abstract)
+   C'est une classe qui ne peut pas être instanciée car elle n'est pas entièrement implémentée.
+   Vous pouvez le considérer comme un croquis. Un croquis incorpore les idées et les plans de quelque chose,
+   mais généralement pas assez d'informations pour le construire. Vous utilisez une esquisse (abstract class) pour créer
+   un plan (class) à partir duquel vous construisez l'instance d'objet réelle.
+   Si les valeurs des propriétés et les implémentations des fonctions ne sont pas connues, rendez la classe abstract.
+   Lorsque vous déclarez des fonctions et des variables abstraites, c'est comme une promesse que vous leur donnerez des
+   valeurs et des implémentations plus tard.

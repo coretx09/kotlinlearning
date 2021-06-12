@@ -6,7 +6,7 @@ fun buildAquarium() {
     myAquarium.printSize()
     myAquarium.width = 65
     // aq 2
-    val aquarium2 = Aquarium(29,"yt", "yt")
+    val aquarium2 = Aquarium(29, "yt", "yt")
     aquarium2.printSize()
     aquarium2.volume = 70
     aquarium2.printSize()
@@ -18,7 +18,7 @@ fun buildAquarium() {
     myTower.printSize()
 }
 
-fun makeFish () {
+fun makeFish() {
     val shark = Shark()
     val pleco = Plecostomus()
     println("Shark: ${shark.color}")
@@ -30,10 +30,9 @@ fun makeFish () {
 }
 
 fun main(args: Array<String>) {
-   // buildAquarium()
+    // buildAquarium()
 
     makeFish()
-
 
 
 }
