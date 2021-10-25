@@ -18,7 +18,9 @@ abstract class Dwelling(private var residents: Int) {
     fun hasRoom(): Boolean {
         return residents < capacity
     }
+    // abstract function
     abstract fun floorArea(): Double
+    // initialized function
     fun getRoom () {
         if (capacity > residents) {
             residents++
