@@ -6,7 +6,11 @@ Une LISTE est une collection d'articles avec un ordre spécifique. Il existe deu
 
 Lorsque vous utilisez List ou MutableList, vous devez spécifier le type d'élément qu'il peut contenir.
  Par exemple, List<Int> contient une liste d'entiers et List<String> contient une liste de chaînes.
+ Kotlin essaie de déduire le type d'éléments que la liste contient à partir des arguments passés.
 
    CREER UNE LIST :
 La fonction de bibliothèque standard Kotlin listOf() permet de creer une liste
 
+   CREER UNE LIST MUTABLE :
+Vous pouvez ajouter, supprimer ou modifier des éléments. Vous pouvez les créer en appelant mutableListOf().
+Vous pouvez également faire tout ce que vous pouvez faire avec les listes en lecture seule
