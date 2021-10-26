@@ -1,0 +1,12 @@
+Une LISTE est une collection d'articles avec un ordre spécifique. Il existe deux types de listes dans Kotlin :
+
+ ~ Read-only list : List ne peut pas être modifiée après sa création.
+ ~ Mutable list : MutableList peut être modifiée après sa création, ce qui signifie que vous pouvez ajouter,
+     supprimer ou mettre à jour ses éléments.
+
+Lorsque vous utilisez List ou MutableList, vous devez spécifier le type d'élément qu'il peut contenir.
+ Par exemple, List<Int> contient une liste d'entiers et List<String> contient une liste de chaînes.
+
+   CREER UNE LIST :
+La fonction de bibliothèque standard Kotlin listOf() permet de creer une liste
+
