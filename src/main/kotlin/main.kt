@@ -99,7 +99,7 @@ fun main(args: Array<String>) {
         print(x)
     }
     println()
-    //Or over a progression.
+    //Or over a progresrintln(name)sion.
     for (x in 6..12 step 3) print(x)
     println()
     for (x in 20 downTo 5 step 5) print(x)

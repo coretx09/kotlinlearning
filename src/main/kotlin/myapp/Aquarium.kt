@@ -28,6 +28,7 @@ open class Aquarium(open var width: Int = 20, open var height: Int = 40, open va
     open val shape: String = "rectangle"
     open var water: Double = 0.0
         get() = volume * 0.9
+
     // Init Blocks
     /* Si votre constructeur a besoin de plus de code d'initialisation, il peut être placé dans un ou
        plusieurs init bloc*/
@@ -43,6 +44,7 @@ open class Aquarium(open var width: Int = 20, open var height: Int = 40, open va
         val tank = numberOfFish * 2000 * 1.1
         height = (tank / (length * width)).toInt()
     }
+
     // Methods
     open fun printSize() {
         println(

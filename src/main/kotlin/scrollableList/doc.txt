@@ -19,3 +19,34 @@ Vous pouvez également faire tout ce que vous pouvez faire avec les listes en le
 
 Vous pouvez utiliser val pour une liste modifiable car la variable contient une référence à la liste,
 et cette référence ne change pas même si le contenu de la liste change.
+
+
+   Parcourez une liste :
+   while loops :
+Il contient un bloc de code (entre accolades) qui est exécuté encore et encore, tant que l'expression
+entre parenthèses est vraie.
+
+ while (expression) {
+     // While the expression is true, execute this code block
+ }
+
+Pour empêcher le code de s'exécuter pour toujours (appelée boucle infinie), le bloc de code doit contenir
+une logique qui modifie la valeur de l'expression, de sorte que l'expression soit finalement fausse
+et que vous arrêtiez d'exécuter la boucle.
+
+    For loops :
+Cela permet de parcourir une liste beaucoup plus facilement.
+
+  for (number in numberList) {
+     // For each element in the list, execute this code block
+  }
+
+ La variable numbere st définie égale au premier élément de numberListet le bloc de code est exécuté.
+ Ensuite, la number variable est automatiquement mise à jour pour être l'élément suivant de numberList,
+ et le bloc de code est à nouveau exécuté. Cela se répète pour chaque élément de la liste, jusqu'à ce
+ que la fin de numberList soit atteinte.
+
+
+ C'est très bien comment vous pouvez écrire les instructions pour ce qui doit arriver pour 1 élément de la liste,
+  et le code est exécuté pour chaque élément de la liste ! L'utilisation d'une boucle peut vous éviter de taper
+  beaucoup de code répétitif.
