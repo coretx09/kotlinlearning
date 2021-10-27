@@ -1,3 +1,6 @@
+collection
+ Une collection peut être définie comme un certain nombre d'objets du même type de données.
+
 Une LISTE est une collection d'articles avec un ordre spécifique. Il existe deux types de listes dans Kotlin :
 
  ~ Read-only list : List ne peut pas être modifiée après sa création.
@@ -50,3 +53,5 @@ Cela permet de parcourir une liste beaucoup plus facilement.
  C'est très bien comment vous pouvez écrire les instructions pour ce qui doit arriver pour 1 élément de la liste,
   et le code est exécuté pour chaque élément de la liste ! L'utilisation d'une boucle peut vous éviter de taper
   beaucoup de code répétitif.
+
+ Le vararg modificateur vous permet de passer un nombre variable d'arguments à une fonction ou à un constructeur

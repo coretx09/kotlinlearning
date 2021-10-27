@@ -38,13 +38,19 @@ class Order(private val orderNumber: String) {
     // variable de classe de niveau supérieur pouvant contenir des éléments de type Item (instances, sous-classe).
     private val itemList = mutableListOf<Item>()
 
-    // Methodes
-    fun addItem(newItem: Item) {
+    /* Methodes
+     Le Builder Pattern est un modèle de conception en programmation qui vous permet de construire un objet complexe
+     dans une approche étape par étape.
+     méthodes addItem() et addAll() de la Order classe, retourne le fichier Order.
+     */
+    fun addItem(newItem: Item): Order {
         itemList.add(newItem)
+        return this
     }
 
-    fun addAll(newItems: List<Item>) {
+    fun addAll(newItems: List<Item>): Order {
         itemList.addAll(newItems)
+        return this
     }
 
     fun print() {
@@ -60,6 +66,7 @@ class Order(private val orderNumber: String) {
 }
 
 fun main() {
+
     //instances d'objets Noodles
     val noodles = Noodles()
     //instances d'objets Vegetables
@@ -71,14 +78,37 @@ fun main() {
     println(vegetables2)
 
     // instances d'objets Order
+    val ordersList = mutableListOf<Order>()
+
     val order1 = Order("1")
     order1.addItem(Noodles())
     order1.addItem((vegetables))
     order1.addItem(Vegetables("bananes"))
     order1.print()
+    ordersList.add(order1)
 
     val order2 = Order("2")
     order2.addAll(listOf(vegetables, Vegetables("orange", "orange")))
     order2.print()
+    ordersList.add(order2)
+
+    /* BUILDER PATTERN
+     Bien qu'il ne soit pas obligatoire d'enchaîner ces appels, il s'agit d'une pratique courante
+      et recommandée qui tire parti de la valeur de retour de la fonction. */
+    val order4 = Order("4").addItem(Noodles()).addItem(Vegetables("Cabbage", "Onion"))
+    order4.print()
+    ordersList.add(order4)
+
+    //pas besoin de stocker la commande dans une variable
+    ordersList.add(
+        Order("5")
+            .addItem(Noodles())
+            .addItem(Noodles())
+            .addItem(Vegetables("Spinach")))
+
+    for (order in ordersList) {
+        order.print()
+        println()
+    }
 
 }
