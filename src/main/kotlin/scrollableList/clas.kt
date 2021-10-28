@@ -35,10 +35,10 @@ class Vegetables(private vararg val toppings: String) : Item("Vegetables", 5) {
 
 // Class de commande
 class Order(private val orderNumber: String) {
-    // variable de classe de niveau supérieur pouvant contenir des éléments de type Item (instances, sous-classe).
+    // variable de classe de niveau supérieur pouvant contenir des éléments de type Item (instances, sous-classe de Item).
     private val itemList = mutableListOf<Item>()
 
-    /* Methodes
+    /* Methodes de class
      Le Builder Pattern est un modèle de conception en programmation qui vous permet de construire un objet complexe
      dans une approche étape par étape.
      méthodes addItem() et addAll() de la Order classe, retourne le fichier Order.
