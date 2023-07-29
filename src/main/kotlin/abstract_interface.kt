@@ -21,8 +21,6 @@ class Girl {
 }
 
 
-
-
 fun main(args: Array<String>) {
 
     val sauvet = Person()
