@@ -25,37 +25,11 @@ fun maxValue(args: Array<Int>): Int {
     return max
 }
 
-private fun functionThrowing() {
-    throw ArithmeticException("Some message")
-}
 
-class MyException : Throwable("Some message")
-fun someFunction() {
-    throw MyException()
-    println("Will not be printed")
-}
 
 
 fun main() {
 
-    try {
-        someFunction()
-        println("Will not be printed")
-    } catch (e: MyException) {
-        println("Caught $e")
-    }
 
-    fun touch(number: Int?):Int {
-        println("toch")
-        return try {
-            number!! - 2
-        } catch (_: Exception) {
-            println("hg")
-            8
-        }
-
-
-    }
-    println(touch(null))
 
 }
